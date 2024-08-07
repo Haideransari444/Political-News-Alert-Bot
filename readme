@@ -1,0 +1,46 @@
+Political News Alert Bot
+
+This project automates the process of retrieving and sending the latest political top stories from various news sources via a web chat interface and sending the updates to a specified phone number using WhatsApp.
+Features
+
+    Web Scraping: Uses Selenium to interact with the BlackBox AI website to retrieve the latest political top stories.
+    Automated Messaging: Uses PyWhatKit to send the retrieved messages to a specified phone number via WhatsApp.
+    Logging: Logs the bot's activities, including errors and responses.
+
+Prerequisites
+
+    Python: Make sure Python is installed on your system.
+    Selenium: Install Selenium for web automation.
+    EdgeDriver: Download and place EdgeDriver in the specified path.
+    PyWhatKit: Install PyWhatKit for WhatsApp messaging.
+Install Python Packages:
+pip install selenium pywhatkit
+ownload EdgeDriver:
+Download the EdgeDriver executable from Microsoft's official website, and place it in the specified path.
+
+Update Script:
+
+    Update the edge_driver_path variable in the script with the path to your EdgeDriver executable.
+    Replace phone_number in the script with the recipient's phone number.
+Usage
+
+    Run the Script:
+    Execute the script to start the bot:
+python your_script_name.py
+    Check Logs:
+    The bot logs the responses and errors to the console.
+
+Script Breakdown
+
+    Web Scraping: Navigates to the BlackBox AI website and retrieves the latest political stories.
+    Messaging: Sends the retrieved stories to a specified phone number via WhatsApp.
+
+Troubleshooting
+
+    Element Not Found: Ensure that the XPaths used in the script match the elements on the website.
+    EdgeDriver Path: Verify the path to EdgeDriver is correctly set.
+    WhatsApp Message Scheduling: Make sure that the PyWhatKit settings are correctly configured.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
